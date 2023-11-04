@@ -1,0 +1,31 @@
+[[language]]
+name = "rust"
+diagnostic-severity = "Hint"
+
+[language-server.rust-analyzer]
+command = "rustup"
+args = ["run", "stable", "rust-analyzer"]
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+completion.fullFunctionSignatures.enable = true
+hover.actions.references.enable = true
+hover.memoryLayout.niches = true
+imports.granularity.enforce = true
+imports.granularity.group = "preserve"
+inlayHints.bindingModeHints.enable = true
+inlayHints.closureReturnTypeHints.enable = "always"
+inlayHints.expressionAdjustmentHints.enable = "always"
+inlayHints.lifetimeElisionHints.enable = "always"
+inlayHints.lifetimeElisionHints.useParameterNames = true
+inlayHints.reborrowHints.enable = "always"
+lens.references.adt.enable = true
+lens.references.enumVariant.enable = true
+lens.references.method.enable = true
+lens.references.trait.enable = true
+rustfmt.overrideCommand = ["rustup", "run", "nightly", "rustfmt"]
+rustfmt.rangeFormatting.enable = true
+semanticHighlighting.operator.specialization.enable = true
+semanticHighlighting.punctuation.enable = true
+semanticHighlighting.punctuation.separate.macro.bang = true
+semanticHighlighting.punctuation.specialization.enable = true

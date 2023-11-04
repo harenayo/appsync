@@ -8,6 +8,10 @@ def 'main git' [] {
     copy 'etc/gitconfig'
 }
 
+def 'main helix' [] {
+    copy 'home/.config/helix'
+}
+
 def 'main nushell' [] {
     copy 'home/.config/nushell'
 }

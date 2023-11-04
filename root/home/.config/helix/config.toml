@@ -1,0 +1,12 @@
+theme = "onedark_transparent"
+
+[editor.cursor-shape]
+normal = "bar"
+insert = "bar"
+select = "bar"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.whitespace]
+render = "all"
