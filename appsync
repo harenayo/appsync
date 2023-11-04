@@ -4,6 +4,10 @@ use std log
 
 def main [] {}
 
+def 'main sudo' [] {
+    copy 'etc/sudoers.d/appsync'
+}
+
 def 'main wsl' [] {
     copy 'etc/wsl.conf'
 }
