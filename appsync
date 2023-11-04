@@ -4,6 +4,10 @@ use std log
 
 def main [] {}
 
+def 'main git' [] {
+    copy 'etc/gitconfig'
+}
+
 def 'main pacman' [] {
     copy 'etc/pacman.d/mirrorlist'
 }

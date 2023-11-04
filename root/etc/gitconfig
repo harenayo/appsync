@@ -1,0 +1,12 @@
+[core]
+	ignorecase = false
+	autocrlf = false
+	quotepath = false
+[init]
+	defaultbranch = main
+[merge]
+	ff = false
+[fetch]
+	prune = true
+[pull]
+	ff = only
