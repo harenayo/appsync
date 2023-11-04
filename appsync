@@ -8,6 +8,10 @@ def 'main git' [] {
     copy 'etc/gitconfig'
 }
 
+def 'main nushell' [] {
+    copy 'home/.config/nushell'
+}
+
 def 'main pacman' [] {
     copy 'etc/pacman.d/mirrorlist'
 }
