@@ -4,6 +4,10 @@ use std log
 
 def main [] {}
 
+def 'main pacman' [] {
+    copy 'etc/pacman.d/mirrorlist'
+}
+
 def 'main sudo' [] {
     copy 'etc/sudoers.d/appsync'
 }
