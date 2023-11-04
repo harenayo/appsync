@@ -4,6 +4,10 @@ use std log
 
 def main [] {}
 
+def 'main alacritty' [] {
+    copy 'home/.config/alacritty/alacritty.yml'
+}
+
 def 'main git' [] {
     copy 'etc/gitconfig'
 }
