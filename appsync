@@ -16,6 +16,10 @@ def 'main helix' [] {
     copy 'home/.config/helix'
 }
 
+def 'main hyprland' [] {
+    copy 'home/.config/hypr/hyprland.conf'
+}
+
 def 'main nushell' [] {
     copy 'home/.config/nushell'
 }
@@ -41,5 +45,10 @@ def copy [path: string] {
     } | (path parse).parent
 
     log debug $'copy ($target) in ($dir)'
+
+    if not ($dir | path exists) {
+        mkdir $dir
+    }
+    
     cp -r $target $dir
 }
