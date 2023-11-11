@@ -36,6 +36,10 @@ def 'main wsl' [] {
     copy 'etc/wsl.conf'
 }
 
+def 'main zellij' [] {
+    copy 'home/.config/zellij'
+}
+
 def copy [path: string] {
     let target = ['root', $path] | path join
 
